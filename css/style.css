@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: titular;
+    src: url(../fonts/fuentecafe.ttf);
+}
+@media only screen and (min-width: 600px){
+    
+
+/*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ABAJO*/
+#grilla{
+    display: grid;
+    height: 1200px;
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 10% 80% 10%;
+    justify-content: space-around;
+    align-content: space-between;
+    grid-template-areas: "header nav"
+                         "main main"
+                         "footer footer";
+}
+
+header{
+    grid-area: header;
+    position: fixed;
+    display: inline-block;
+    background-color: rgb(116,59,27);
+    color:whitesmoke;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 50px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(116,59,27), rgb(120, 130, 0));
+}
+
+nav{
+    grid-area: nav;
+    display: inline-block;
+    color:whitesmoke;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 25px;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    background-image: linear-gradient(to right, rgb(116,59,27), rgb(120, 130, 0));
+    color:whitesmoke;
+    font-size: 15px;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 45%;
+    grid-template-areas: "address"
+                         "derechos";
+    justify-content: space-around;
+    align-content: space-between;
+}
+/*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
+/*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
+ h4{
+    display: inline-block;
+    color:whitesmoke;
+    font-family: titular;
+    font-size: 75px;
+    padding-left: 20px;
+}
+
+.barraNav{
+    /*Tuve que generar una class porque tengo <li> en más de una parte*/
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    list-style-type: none;
+    margin-left: 40px;
+    padding-left: 30px;
+    font-family: titular;
+    transform: skewY(3deg);
+}
+
+.logoPrincipal{
+    padding-left: 10px;
+    margin-top: 10px;
+    block-size: 75px;
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+    transition: 1s;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#address{
+    grid-area: address;
+    vertical-align: middle;
+}
+#derechos{
+    grid-area: derechos;
+}
+
+/*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
+/*MAIN INICIO*/
+#mainIndex{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-template-rows: 25% 70%;
+    grid-template-areas: "texto1 texto1"
+                         "video texto2";
+    justify-content: space-around;
+    align-content: space-between;
+    padding-top: 40px;
+}
+.prepararCafe{
+    grid-area: texto1;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(116,59,27);
+    font-size: 35px;
+    margin-top: 25px;
+}
+.prepararCafe2{
+    grid-area: texto2;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: rgb(116,59,27);
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#videoIndex{
+    grid-area: video;
+    width: 100%;
+}
+
+
+/*MAIN PRODUCTOS*/
+#mainProductos{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    justify-content: space-around;
+    align-content: space-between;
+}
+article{
+    display: inline-block;
+    margin-top: 160px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.imgProductos{
+    height: 250px;
+    width: 400px;
+    border-color: rgb(116,59,27);
+    border-style: solid;
+}
+h3{
+    margin-top: 10px;
+    text-align: center;
+}
+h5{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+/*MAIN GALERÍA*/
+#mainGaleria{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-evenly;
+    align-content: space-between;
+    
+}
+.imgGaleria{
+    height: 95%;
+    width: 95%;
+}
+
+
+/*MAIN SOBRE NOSOTROS*/
+#mainSN{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-template-rows: 95%;
+    grid-template-areas: "tex1 ima1";
+    justify-content: space-around;
+    align-content: space-between;
+}
+#imgSN{
+    grid-area: ima1;
+    width: 90%;
+    align-content: center;
+}
+#texto1{
+    grid-area: tex1;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 34px;
+    color: rgb(116,59,27)
+  }
+
+  /*MAIN CONTACTOS*/
+  #mainContactos{
+    grid-area: main;
+  }
+  fieldset{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .datosPersonales{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 25px;
+  }
+  .genero{
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 25px;
+  }
+  .boton{
+      margin-left: 15px;
+      margin-right: 10px;
+      margin-top: 10px;
+  }
+  .acepto{
+      display: inline-block;
+      margin-top: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+    
+
+    /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ABAJO*/
+    #grilla{
+        display: grid;
+        height: 800px;
+        grid-template-columns: 20% 75%;
+        grid-template-rows: 10% 80% 10%;
+        justify-content: space-around;
+        align-content: space-between;
+        grid-template-areas: "header nav"
+                             "main main"
+                             "footer footer";
+    }
+    
+    header{
+        grid-area: header;
+        position: fixed;
+        display: inline-block;
+        background-color: rgb(116,59,27);
+        color:whitesmoke;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 30px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(116,59,27), rgb(0, 130, 39, 0.76));
+    }
+    
+    nav{
+        grid-area: nav;
+        display: inline-block;
+        color:whitesmoke;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-top: 10px;
+        
+    
+    }
+    
+    footer{
+        grid-area: footer;
+        display: grid;
+        background-image: linear-gradient(to right, rgb(116,59,27), rgba(0, 130, 39, 0.76));
+        color:whitesmoke;
+        font-size: 10px;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 45%;
+        grid-template-areas: "address"
+                             "derechos";
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
+    /*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
+     h4{
+        display: inline-block;
+        color:whitesmoke;
+        font-family: titular;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .barraNav{
+        /*Tuve que generar una class porque tengo <li> en más de una parte*/
+
+        color:rgb(255, 255, 255);
+        list-style-type: none;
+        margin-left: 10px;
+        padding-left: 5px;
+        font-family: titular;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: skewY(-3deg);
+    }
+    
+    
+    .logoPrincipal{
+        padding-left: 5px;
+        margin-top: 5px;
+        block-size: 45px;
+    }
+    a{
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+ 
+    #address{
+        grid-area: address;
+        vertical-align: middle;
+    }
+    #derechos{
+        grid-area: derechos;
+    }
+    
+    /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
+    /*MAIN INICIO*/
+    #mainIndex{
+        margin-top: 5%;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 35% 30% 30%;
+        grid-template-areas: "texto1"
+                             "texto2"
+                             "video";
+        justify-content: space-around;
+        align-content: space-between;
+        justify-items: center;
+    }
+    .prepararCafe{
+        grid-area: texto1;
+        font-family: 'Fuzzy Bubbles', cursive;
+        color: rgb(116,59,27);
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .prepararCafe2{
+        grid-area: texto2;
+        font-family: 'Fuzzy Bubbles', cursive;
+        color: rgb(116,59,27);
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    #videoIndex{
+        grid-area: video;
+        width: 95%;
+        height: fit-content;
+        margin-top: 10px;
+    }
+    
+    
+    /*MAIN PRODUCTOS*/
+    #mainProductos{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-areas: "P1"
+                             "P2"
+                             "P3";
+        justify-content: space-around;
+        align-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    article{
+        display: inline-grid;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #P1{
+        grid-area: P1;
+    }
+    #P2{
+        grid-area: P2;
+    }
+    #P3{
+        grid-area: P3;
+    }
+    .imgProductos{
+        height: 120px;
+        width: 200px;
+        border-color: rgb(116,59,27);
+        border-style: solid;
+        justify-self: center;
+    }
+    h3{
+        margin-top: 5px;
+        text-align: center;
+    }
+    h5{
+        margin-top: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    
+    
+    /*MAIN GALERÍA*/
+    #mainGaleria{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 23% 23% 23% 23%;
+        justify-content: space-evenly;
+        align-content: space-between;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    .imgGaleria{
+        height: 95%;
+        width: fit-content;
+        justify-self: center;
+        padding-top: 5px;
+    }
+    
+    
+    /*MAIN SOBRE NOSOTROS*/
+    #mainSN{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 50% 45%;
+        grid-template-areas: "ima1" 
+                             "tex1";
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    #imgSN{
+        grid-area: ima1;
+        height: fit-content;
+        width: 60%;
+        align-content: center;
+        justify-self: center;
+        padding-top: 30px;
+    }
+    #texto1{
+        grid-area: tex1;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 14px;
+        color: rgb(116,59,27)
+      }
+    
+      /*MAIN CONTACTOS*/
+      #mainContactos{
+        margin-top: 30px;
+        grid-area: main;
+      }
+      fieldset{
+          margin-left: 5px;
+          margin-right: 5px;
+      }
+      .datosPersonales{
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 25px;
+      }
+      .genero{
+        display: inline-block;
+        padding-top: 15px;
+        margin-left: 15px;
+        margin-right: 25px;
+      }
+      .boton{
+          margin-left: 15px;
+          margin-right: 10px;
+          margin-top: 10px;
+      }
+      .acepto{
+          display: inline-block;
+          margin-top: 10px;
+          font-size: 10px;
+      }
+    }
