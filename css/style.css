@@ -33,6 +33,7 @@ header{
     font-size: 50px;
     width: 100%;
     background-image: linear-gradient(to right, rgb(116,59,27), rgb(120, 130, 0));
+    height: 80px;
 }
 
 nav{
@@ -78,13 +79,13 @@ footer{
     transform: skewY(3deg);
 }
 
-.logoPrincipal{
-    padding-left: 10px;
-    margin-top: 10px;
-    block-size: 75px;
+#logoPrincipal{
+    padding-left: 5px;
+    margin-top: 5px;
+    block-size: 50px;
 }
-a{
-    text-decoration: none;
+#a{
+    text-decoration: none; 
     color: blanchedalmond;
     transition: 1s;
 }
@@ -139,10 +140,12 @@ a:hover{
 #mainProductos{
     grid-area: main;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 45% 45%;
     justify-content: space-around;
-    align-content: space-between;
+    align-content: space-evenly;
+    align-items: center;
+    justify-items: center;
 }
 article{
     display: inline-block;
@@ -171,16 +174,14 @@ h5{
 /*MAIN GALERÍA*/
 #mainGaleria{
     grid-area: main;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    justify-content: space-evenly;
-    align-content: space-between;
+    display: flex;
+    justify-self: center;
+    align-self: center;
     
 }
-.imgGaleria{
-    height: 95%;
-    width: 95%;
+#imgGaleria{
+    height: 720px;
+    width: 1080px;
 }
 
 
@@ -245,7 +246,7 @@ h5{
         display: grid;
         height: 800px;
         grid-template-columns: 20% 75%;
-        grid-template-rows: 10% 80% 10%;
+        grid-template-rows: 17% 63% 10%;
         justify-content: space-around;
         align-content: space-between;
         grid-template-areas: "header nav"
@@ -266,6 +267,7 @@ h5{
         justify-content: space-evenly;
         align-items: center;
         background-image: linear-gradient(to right, rgb(116,59,27), rgb(0, 130, 39, 0.76));
+        height:140px;
     }
     
     nav{
@@ -318,12 +320,12 @@ h5{
     }
     
     
-    .logoPrincipal{
+    #logoPrincipal{
         padding-left: 5px;
         margin-top: 5px;
         block-size: 45px;
     }
-    a{
+    #a{
         text-decoration: none;
         color: blanchedalmond;
     }
@@ -339,11 +341,10 @@ h5{
     /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
     /*MAIN INICIO*/
     #mainIndex{
-        margin-top: 5%;
         grid-area: main;
         display: grid;
         grid-template-columns: 90%;
-        grid-template-rows: 35% 30% 30%;
+        grid-template-rows: 30% 20% 45%;
         grid-template-areas: "texto1"
                              "texto2"
                              "video";
@@ -355,14 +356,14 @@ h5{
         grid-area: texto1;
         font-family: 'Fuzzy Bubbles', cursive;
         color: rgb(116,59,27);
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 5px;
     }
     .prepararCafe2{
         grid-area: texto2;
         font-family: 'Fuzzy Bubbles', cursive;
         color: rgb(116,59,27);
-        font-size: 15px;
+        font-size: 10px;
         margin-bottom: 10px;
         margin-top: 5px;
         margin-left: 20px;
@@ -380,58 +381,49 @@ h5{
     #mainProductos{
         grid-area: main;
         display: grid;
-        grid-template-columns: 90%;
+        grid-template-columns: 45% 45%;
         grid-template-rows: 30% 30% 30%;
-        grid-template-areas: "P1"
-                             "P2"
-                             "P3";
         justify-content: space-around;
         align-content: space-between;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        margin-bottom: 20px;
     }
     article{
-        display: inline-grid;
+        display: flex;
         margin-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
     }
-    #P1{
-        grid-area: P1;
-    }
-    #P2{
-        grid-area: P2;
-    }
-    #P3{
-        grid-area: P3;
-    }
-    .imgProductos{
-        height: 120px;
-        width: 200px;
-        border-color: rgb(116,59,27);
-        border-style: solid;
+
+    #imgProductos{
+        height: 100px;
+        width: 150px;
         justify-self: center;
     }
-    h3{
-        margin-top: 5px;
-        text-align: center;
+
+    #textoProducto{
+        font-size: 10px;
     }
-    h5{
-        margin-top: 10px;
-        text-align: center;
+    
+    #precioProducto{
+        display: inline-block;
         font-size: 15px;
     }
-    
-    
-    
+    #buttonSize{
+        height: 30px;
+        width: 100px;
+        font-size: 15px;
+        padding-right: 10px;
+        background-color: green;
+    }
+
     /*MAIN GALERÍA*/
     #mainGaleria{
         grid-area: main;
-        display: grid;
-        grid-template-columns: 90%;
-        grid-template-rows: 23% 23% 23% 23%;
+        display: flex;
         justify-content: space-evenly;
         align-content: space-between;
+        justify-self: center;
+        align-self: center;
         margin-bottom: 5px;
         margin-top: 15px;
     }
@@ -448,7 +440,7 @@ h5{
         grid-area: main;
         display: grid;
         grid-template-columns: 90%;
-        grid-template-rows: 50% 45%;
+        grid-template-rows: 50% 50%;
         grid-template-areas: "ima1" 
                              "tex1";
         justify-content: space-around;
@@ -457,22 +449,27 @@ h5{
     #imgSN{
         grid-area: ima1;
         height: fit-content;
-        width: 60%;
+        width: 50%;
         align-content: center;
         justify-self: center;
-        padding-top: 30px;
+        padding-top: 10px;
     }
     #texto1{
         grid-area: tex1;
         font-family: 'Architects Daughter', cursive;
-        font-size: 14px;
-        color: rgb(116,59,27)
+        font-size: 12px;
+        color: rgb(116,59,27);
+        padding-top: 10px;
       }
     
       /*MAIN CONTACTOS*/
+     
+    
       #mainContactos{
-        margin-top: 30px;
         grid-area: main;
+      }
+      #datosA{
+          display: block;
       }
       fieldset{
           margin-left: 5px;

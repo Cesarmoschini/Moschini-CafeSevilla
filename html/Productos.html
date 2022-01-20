@@ -20,47 +20,80 @@
 <body data-aos="flip-left">
     <div id="grilla">
         <header>
-            <img src="../img/logo.png" alt="Logo" class="logoPrincipal">
+            <img src="../img/logo.png" alt="Logo" id="logoPrincipal">
             <h4>
                 Calidad en café
             </h4>
             <nav>
                 <ul>
                     <li class="barraNav">
-                        <a href="../index.html">Inicio</a>
+                        <a href="../index.html" id="a">Inicio</a>
                     </li>
                     <li class="barraNav">
-                        <a href="Productos.html">Productos</a>
+                        <a href="Productos.html" id="a">Productos</a>
                     </li>
                     <li class="barraNav">
-                        <a href="Galeria.html">Galería</a>
+                        <a href="Galeria.html" id="a">Galería</a>
                     </li>
                     <li class="barraNav">
-                        <a href="Sobre_Nosotros.html">Sobre nosotros</a>
+                        <a href="Sobre_Nosotros.html" id="a">Sobre nosotros</a>
                     </li>
                     <li class="barraNav">
-                        <a href="Contactos.html">Contactos</a>
+                        <a href="Contactos.html" id="a">Contactos</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main id="mainProductos">
-            <article id="P1">
-                <img src="..\img\cafe.png" alt="café" class="imgProductos">
-                <h3>Café en granos para moler - 5kg</h3>
-                <h5>$ 4.600,00</h5>
-            </article>
-            <article id="P2">
-                    <img src="..\img\capsulas.png" alt="cápsulas" class="imgProductos">
-                    <h3>Café en cápsulas - 10 unidades</h3>
-                    <h5>$ 1.600,00</h5>
-            </article>
-            <article id="P3">
-                    <img src="..\img\tazas.png" alt="tazas" class="imgProductos">
-                    <h3>Tazas para café de 180mm - 3 unidades</h3>
-                    <h5>$ 1.800,00</h5>
-            </article> 
+            <div class="card" style="width: 18rem;">
+                <img src="..\img\cafe.png" class="card-img-top" alt="café" id="imgProductos">
+                <div class="card-body" id="bodySize">
+                  <h5 class="card-title" id="textoProducto">Café en granos para moler - 5kg</h5>
+                  <p class="card-text" id="precioProducto">$ 4.600,00</p>
+                  <a href="#" class="btn btn-primary" id="buttonSize">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..\img\capsulas3.png" class="card-img-top" alt="cápsulas" id="imgProductos">
+                <div class="card-body">
+                  <h5 class="card-title" id="textoProducto">Café en cápsulas - 10 unidades</h5>
+                  <p class="card-text" id="precioProducto">$ 1.600,00</p>
+                  <a href="#" class="btn btn-primary" id="buttonSize">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..\img\tazas.png" class="card-img-top" alt="tazas" id="imgProductos">
+                <div class="card-body">
+                  <h5 class="card-title" id="textoProducto">Tazas para café de 180mm - 3 unidades</h5>
+                  <p class="card-text" id="precioProducto">$ 1.800,00</p>
+                  <a href="#" class="btn btn-primary" id="buttonSize">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..\img\cafetera.png" class="card-img-top" alt="café" id="imgProductos">
+                <div class="card-body">
+                  <h5 class="card-title" id="textoProducto">Cafetera premium - capsulas/instantaneo</h5>
+                  <p class="card-text" id="precioProducto">$ 18.500,00</p>
+                  <a href="#" class="btn btn-primary" id="buttonSize">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..\img\capsulas2.png" class="card-img-top" alt="cápsulas" id="imgProductos">
+                <div class="card-body">
+                  <h5 class="card-title" id="textoProducto">Café en cápsulas - 50 unidades</h5>
+                  <p class="card-text" id="precioProducto">$ 7.000,00</p>
+                  <a href="#" class="btn btn-primary" id="buttonSize">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..\img\tazas2.png" class="card-img-top" alt="tazas" id="imgProductos">
+                <div class="card-body">
+                  <h5 class="card-title" id="textoProducto">Tazas para café de 180mm - 6 unidades</h5>
+                  <p class="card-text" id="precioProducto">$ 3.000,00</p>
+                  <a href="#" class="btn btn-primary" id="buttonSize">Comprar</a>
+                </div>
+            </div>
         </main>
         <footer>
             <address id="address">
