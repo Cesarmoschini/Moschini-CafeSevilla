@@ -35,7 +35,12 @@ header{
     background-image: linear-gradient(to right, rgb(116,59,27), rgb(120, 130, 0));
     height: 80px;
 }
-
+#navbar{
+    display: flex;
+    background-image: linear-gradient(to right, rgb(116,59,27), rgb(120, 130, 0));
+    width:100%;
+    justify-content: space-around;
+}
 nav{
     grid-area: nav;
     display: inline-block;
@@ -61,11 +66,12 @@ footer{
 /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
 /*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
  h4{
-    display: inline-block;
+    display: inline;
     color:whitesmoke;
     font-family: titular;
     font-size: 75px;
     padding-left: 20px;
+    width: 200px;
 }
 
 .barraNav{
@@ -210,30 +216,13 @@ h5{
   /*MAIN CONTACTOS*/
   #mainContactos{
     grid-area: main;
+    display: flex;
+    justify-self: center;
+    margin-top: 40px;
   }
   fieldset{
       margin-left: 10px;
       margin-right: 10px;
-  }
-  .datosPersonales{
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 25px;
-  }
-  .genero{
-    display: inline-block;
-    padding-top: 15px;
-    margin-left: 15px;
-    margin-right: 25px;
-  }
-  .boton{
-      margin-left: 15px;
-      margin-right: 10px;
-      margin-top: 10px;
-  }
-  .acepto{
-      display: inline-block;
-      margin-top: 10px;
   }
 }
 
@@ -246,7 +235,7 @@ h5{
         display: grid;
         height: 800px;
         grid-template-columns: 20% 75%;
-        grid-template-rows: 17% 63% 10%;
+        grid-template-rows: 10% 70% 10%;
         justify-content: space-around;
         align-content: space-between;
         grid-template-areas: "header nav"
@@ -267,19 +256,13 @@ h5{
         justify-content: space-evenly;
         align-items: center;
         background-image: linear-gradient(to right, rgb(116,59,27), rgb(0, 130, 39, 0.76));
-        height:140px;
+        height:75px;
     }
     
-    nav{
-        grid-area: nav;
-        display: inline-block;
-        color:whitesmoke;
-        font-family: 'Architects Daughter', cursive;
-        font-size: 15px;
-        margin-left: 10px;
-        margin-top: 10px;
-        
-    
+    #navbar{
+        display: block;
+        background-image: linear-gradient(to right, rgb(116,59,27), rgb(120, 130, 0));
+        justify-content: space-around;
     }
     
     footer{
@@ -307,27 +290,28 @@ h5{
     }
     .barraNav{
         /*Tuve que generar una class porque tengo <li> en más de una parte*/
-
+        display: inline-block;
         color:rgb(255, 255, 255);
         list-style-type: none;
-        margin-left: 10px;
-        padding-left: 5px;
+        margin-left: 40px;
+        padding-left: 30px;
         font-family: titular;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        transform: skewY(-3deg);
+        transform: skewY(3deg);
     }
-    
     
     #logoPrincipal{
         padding-left: 5px;
         margin-top: 5px;
-        block-size: 45px;
+        block-size: 50px;
     }
     #a{
-        text-decoration: none;
+        text-decoration: none; 
         color: blanchedalmond;
+        transition: 1s;
+    }
+    a:hover{
+        color: rgb(255, 255, 255);
+        font-size: 40px;
     }
  
     #address{
@@ -386,6 +370,7 @@ h5{
         justify-content: space-around;
         align-content: space-between;
         margin-bottom: 20px;
+        z-index: -2;
     }
     article{
         display: flex;
@@ -398,6 +383,7 @@ h5{
         height: 100px;
         width: 150px;
         justify-self: center;
+        
     }
 
     #textoProducto{
@@ -467,6 +453,10 @@ h5{
     
       #mainContactos{
         grid-area: main;
+        display: flex;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
       }
       #datosA{
           display: block;
@@ -475,25 +465,7 @@ h5{
           margin-left: 5px;
           margin-right: 5px;
       }
-      .datosPersonales{
-        display: inline-block;
-        margin-left: 15px;
-        margin-right: 25px;
-      }
-      .genero{
-        display: inline-block;
-        padding-top: 15px;
-        margin-left: 15px;
-        margin-right: 25px;
-      }
-      .boton{
-          margin-left: 15px;
-          margin-right: 10px;
-          margin-top: 10px;
-      }
-      .acepto{
-          display: inline-block;
-          margin-top: 10px;
-          font-size: 10px;
+      #alFondo{
+        z-index: -2;
       }
     }

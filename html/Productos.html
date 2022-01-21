@@ -19,30 +19,42 @@
 </head>
 <body data-aos="flip-left">
     <div id="grilla">
-        <header>
-            <img src="../img/logo.png" alt="Logo" id="logoPrincipal">
-            <h4>
-                Calidad en café
-            </h4>
-            <nav>
-                <ul>
-                    <li class="barraNav">
-                        <a href="../index.html" id="a">Inicio</a>
-                    </li>
-                    <li class="barraNav">
-                        <a href="Productos.html" id="a">Productos</a>
-                    </li>
-                    <li class="barraNav">
-                        <a href="Galeria.html" id="a">Galería</a>
-                    </li>
-                    <li class="barraNav">
-                        <a href="Sobre_Nosotros.html" id="a">Sobre nosotros</a>
-                    </li>
-                    <li class="barraNav">
-                        <a href="Contactos.html" id="a">Contactos</a>
-                    </li>
-                </ul>
-            </nav>
+        <header id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+
+                <div class="container-fluid">
+                    <img src="../img/logo.png" alt="Logo" id="logoPrincipal">
+                    <h4>
+                        Calidad en café
+                    </h4>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html" id="a">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Productos.html"  id="a">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Galeria.html"  id="a">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Sobre_Nosotros.html"  id="a">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contactos.html"  id="a">Contactos</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit" style="background-color: brown; color: blanchedalmond;">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
         </header>
 
         <main id="mainProductos">
