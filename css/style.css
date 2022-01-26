@@ -137,6 +137,11 @@ a:hover{
     color: rgb(116,59,27);
     font-size: 35px;
     margin-top: 25px;
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 2s;
 }
 .prepararCafe2{
     grid-area: texto2;
@@ -145,11 +150,22 @@ a:hover{
     font-size: 25px;
     margin-bottom: 10px;
     margin-top: 10px;
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 2s;
 }
 #videoIndex{
     grid-area: video;
     width: 100%;
 }
+
+  @keyframes efecto1 {
+      0%{color: rgb(128, 57, 18)}
+      50%{color:  rgb(41, 34, 30)}
+      100%{color: rgb(116,59,27)}
+  }
 /*MAIN INICIO DE ACÁ PARA ARRIBAR*/
 
 /*MAIN PRODUCTOS DE ACA PARA ABAJO*/
@@ -236,8 +252,19 @@ a:hover{
     grid-area: tex1;
     font-family: 'Architects Daughter', cursive;
     font-size: 34px;
-    color: rgb(116,59,27)
+    color: rgb(116,59,27);
+    animation-name: efecto2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 2s;
   }
+  @keyframes efecto2 {
+      0%{color: rgb(65, 30, 11)}
+      50%{color:  rgb(179, 67, 2)}
+      100%{color: rgb(116,59,27)}
+  }
+
 /*MAIN SOBRE NOSOTROS DE ACA PARA ARRIBA*/
 
 /*MAIN CONTACTOS DE ACÁ PARA ABAJO*/
