@@ -7,6 +7,13 @@
     font-family: titular;
     src: url(../fonts/fuentecafe.ttf);
 }
+
+#buttonIndex{
+    background-color: brown; 
+    color: blanchedalmond;
+}
+
+
 @media only screen and (min-width: 600px){
     
 
@@ -64,12 +71,13 @@ footer{
     align-content: space-between;
 }
 /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
+
 /*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
  h4{
     display: inline;
     color:whitesmoke;
     font-family: titular;
-    font-size: 75px;
+    font-size: 25px;
     padding-left: 20px;
     width: 200px;
 }
@@ -107,9 +115,9 @@ a:hover{
 #derechos{
     grid-area: derechos;
 }
-
 /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
-/*MAIN INICIO*/
+
+/*MAIN INICIO DE ACÁ PARA ABAJO*/
 #mainIndex{
     grid-area: main;
     display: grid;
@@ -120,6 +128,8 @@ a:hover{
     justify-content: space-around;
     align-content: space-between;
     padding-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(252, 252, 200);
 }
 .prepararCafe{
     grid-area: texto1;
@@ -140,9 +150,9 @@ a:hover{
     grid-area: video;
     width: 100%;
 }
+/*MAIN INICIO DE ACÁ PARA ARRIBAR*/
 
-
-/*MAIN PRODUCTOS*/
+/*MAIN PRODUCTOS DE ACA PARA ABAJO*/
 #mainProductos{
     grid-area: main;
     display: grid;
@@ -151,47 +161,61 @@ a:hover{
     justify-content: space-around;
     align-content: space-evenly;
     align-items: center;
+    background-color: rgb(240, 183, 173);
+    margin-bottom: 40px;
+    object-fit: contain;
+}
+#imgProductos{
+    display: flex;
+    margin-top: 10px;
+    height: 160px;
+    width: 220px;
+    justify-content: center;
     justify-items: center;
 }
-article{
-    display: inline-block;
-    margin-top: 160px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.imgProductos{
-    height: 250px;
+#sizeCard{
+    height: 400px;
     width: 400px;
-    border-color: rgb(116,59,27);
-    border-style: solid;
+    align-items: center;
 }
-h3{
-    margin-top: 10px;
+#textoProducto{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
     text-align: center;
 }
-h5{
-    margin-top: 20px;
-    text-align: center;
-    font-size: 25px;
+
+#precioProducto{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
 }
+#buttonSize{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    background-color: rgba(173, 47, 30, 0.849);
+    border: none;
+    align-self: center;
+    margin-bottom: 10px;
+    margin-left: 125px;
+}
+/*MAIN PRODUCTO DE ACÁ PARA ARRIBAR*/
 
-
-
-/*MAIN GALERÍA*/
+/*MAIN GALERIA DE ACA PARA ABAJO*/
 #mainGaleria{
     grid-area: main;
     display: flex;
     justify-self: center;
-    align-self: center;
-    
+    align-self: center;    
 }
 #imgGaleria{
     height: 720px;
     width: 1080px;
 }
+/*MAIN GALERIA DE ACA PARA ARRIBA*/
 
-
-/*MAIN SOBRE NOSOTROS*/
+/*MAIN SOBRE NOSOTROS DE ACA PARA ABAJO*/
 #mainSN{
     grid-area: main;
     display: grid;
@@ -200,6 +224,8 @@ h5{
     grid-template-areas: "tex1 ima1";
     justify-content: space-around;
     align-content: space-between;
+    background-color: burlywood;
+    margin-bottom: 250px;
 }
 #imgSN{
     grid-area: ima1;
@@ -212,30 +238,34 @@ h5{
     font-size: 34px;
     color: rgb(116,59,27)
   }
+/*MAIN SOBRE NOSOTROS DE ACA PARA ARRIBA*/
 
-  /*MAIN CONTACTOS*/
+/*MAIN CONTACTOS DE ACÁ PARA ABAJO*/
   #mainContactos{
     grid-area: main;
     display: flex;
     justify-self: center;
     margin-top: 40px;
+    background-color: rgb(209, 224, 252);
+    margin-bottom: 350px;
   }
   fieldset{
       margin-left: 10px;
       margin-right: 10px;
   }
 }
+/*MAIN CONTACTOS DE ACÁ PARA ARRIBA*/
 
 
 @media only screen and (max-width: 600px){
     
 
-    /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ABAJO*/
+/*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ABAJO*/
     #grilla{
         display: grid;
         height: 800px;
         grid-template-columns: 20% 75%;
-        grid-template-rows: 10% 70% 10%;
+        grid-template-rows: 10% 78% 10%;
         justify-content: space-around;
         align-content: space-between;
         grid-template-areas: "header nav"
@@ -279,8 +309,9 @@ h5{
         justify-content: space-around;
         align-content: space-between;
     }
-    /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
-    /*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
+/*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
+
+/*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
      h4{
         display: inline-block;
         color:whitesmoke;
@@ -321,9 +352,9 @@ h5{
     #derechos{
         grid-area: derechos;
     }
-    
-    /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
-    /*MAIN INICIO*/
+/*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
+
+/*MAIN INICIO DE ACÁ PARA ABAJO*/
     #mainIndex{
         grid-area: main;
         display: grid;
@@ -335,18 +366,20 @@ h5{
         justify-content: space-around;
         align-content: space-between;
         justify-items: center;
+        background-color: rgb(255, 197, 209);
+        margin-bottom: 40px;
     }
     .prepararCafe{
         grid-area: texto1;
         font-family: 'Fuzzy Bubbles', cursive;
-        color: rgb(116,59,27);
+        color: rgb(200, 5, 5);
         font-size: 15px;
         margin-top: 5px;
     }
     .prepararCafe2{
         grid-area: texto2;
         font-family: 'Fuzzy Bubbles', cursive;
-        color: rgb(116,59,27);
+        color: rgb(200, 5, 5);
         font-size: 10px;
         margin-bottom: 10px;
         margin-top: 5px;
@@ -359,50 +392,60 @@ h5{
         height: fit-content;
         margin-top: 10px;
     }
+/*MAIN INICIO DE ACÁ PARA ARRIBA*/
     
-    
-    /*MAIN PRODUCTOS*/
-    #mainProductos{
-        grid-area: main;
-        display: grid;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 30% 30% 30%;
-        justify-content: space-around;
-        align-content: space-between;
-        margin-bottom: 20px;
-        z-index: -2;
-    }
-    article{
-        display: flex;
-        margin-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+/*MAIN PRODUCTOS DE ACÁ PARA ABAJO*/
+#mainProductos{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: space-around;
+    align-content: space-evenly;
+    align-items: center;
+    background-color: rgb(175, 249, 252);
+    margin-bottom: 20px;
+    object-fit: contain;
+    z-index: -2;
+    margin-right: 15px;
+}
+#imgProductos{
+    display: flex;
+    margin-top: 2px;
+    height: 70px;
+    width: 100px;
+    justify-content: center;
+    justify-items: center;
+}
+#sizeCard{
+    height: 165px;
+    width: 165px;
+    align-items: center;
+}
+#textoProducto{
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+}
 
-    #imgProductos{
-        height: 100px;
-        width: 150px;
-        justify-self: center;
-        
-    }
+#precioProducto{
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+}
+#buttonSize{
+    height: 30px;
+    width: 90px;
+    font-size: 15px;
+    background-color: rgba(14, 128, 204, 0.849);
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+/*MAIN PRODUCTOS DE ACÁ PARA ARRIBA*/
 
-    #textoProducto{
-        font-size: 10px;
-    }
-    
-    #precioProducto{
-        display: inline-block;
-        font-size: 15px;
-    }
-    #buttonSize{
-        height: 30px;
-        width: 100px;
-        font-size: 15px;
-        padding-right: 10px;
-        background-color: green;
-    }
-
-    /*MAIN GALERÍA*/
+/*MAIN GALERÍA DE ACÁ PARA ABAJO*/
     #mainGaleria{
         grid-area: main;
         display: flex;
@@ -419,9 +462,9 @@ h5{
         justify-self: center;
         padding-top: 5px;
     }
+/*MAIN GALERÍA DE ACÁ PARA ARRIBA*/    
     
-    
-    /*MAIN SOBRE NOSOTROS*/
+/*MAIN SOBRE NOSOTROS DE ACÁ PARA ABAJO*/
     #mainSN{
         grid-area: main;
         display: grid;
@@ -431,6 +474,7 @@ h5{
                              "tex1";
         justify-content: space-around;
         align-content: space-between;
+        background-color: rgba(189, 183, 107, 0.644);
     }
     #imgSN{
         grid-area: ima1;
@@ -447,16 +491,16 @@ h5{
         color: rgb(116,59,27);
         padding-top: 10px;
       }
+/*MAIN SOBRE NOSOTROS DE ACÁ PARA ARRIBA*/      
     
-      /*MAIN CONTACTOS*/
-     
-    
+/*MAIN CONTACTOS DE ACÁ PARA ABAJO*/
       #mainContactos{
         grid-area: main;
         display: flex;
         margin-left: 15px;
         margin-right: 15px;
         margin-bottom: 5px;
+        background-color: rgba(235, 66, 66, 0.493);
       }
       #datosA{
           display: block;
@@ -469,3 +513,4 @@ h5{
         z-index: -2;
       }
     }
+/*MAIN CONTACTOS DE ACÁ PARA ARRIBA*/
