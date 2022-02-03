@@ -8,36 +8,11 @@
     src: url(../fonts/fuentecafe.ttf);
 }
 
-/*VARIABLES DE COLOR DE ACÁ PARA ABAJO*/
-$colorNavFoo1:rgb(116,59,27);
-$colorNavFoo2:rgb(120, 130, 0);
-$colorNavFoo3:rgb(0, 130, 39);
-$colorEfecto1:rgb(128, 57, 18);
-$colorEfecto2: rgb(41, 34, 30);
-$colorEfecto3: rgb(116,66,27);
-$colorEfecto4:rgb(65, 30, 11);
-$colorEfecto5: rgb(179, 67, 2);
-$colorEfecto6: rgb(175, 6, 6);
-$colorEfecto7: rgb(82, 1, 1);
-$colorEfecto8: rgb(200, 5, 5);
-$colorEfecto9: rgb(233, 12, 12);
-$colorEfecto10: rgb(109, 5, 5);
-$colorEfecto11:rgb(112, 49, 4);
-$colorLetra1: whitesmoke;
-$colorLetra2: blanchedalmond;
-$colorLetra3: rgb(255,255,255);
-$colorBoton: brown;
-$colorFondo1:rgb(252, 252, 200);
-$colorFondo2: rgb(240, 183, 173);
-$colorFondo3:rgb(173, 47, 30);
-$colorFondo4:burlywood;
-$colorFondo5:rgb(209, 224, 252);
-$colorFondo6:rgb(255, 197, 209);
-$colorFondo7:rgb(175, 249, 252);
-$colorFondo8: rgba(14, 128, 204, 0.849);
-$colorFondo9:rgb(189, 183, 107);
-$colorFondo10:rgba(235, 66, 66, 0.493);
-/*VARIABLES DE COLOR DE ACÁ PARA ARRIBA*/
+/*VARIABLES IMPORTADAS DE ACÁ PARA ABAJO*/
+@import 'variablesEfecto.scss';
+@import 'variablesFondo.scss';
+@import 'variablesOtras.scss';
+/*VARIABLES IMPORTADAS DE ACÁ PARA ARRIBA*/
 #buttonIndex{
     background-color: $colorBoton; 
     color: $colorLetra2;
@@ -140,10 +115,10 @@ h4{
     text-decoration: none; 
     color: $colorLetra2;
     transition: 1s;
-}
-a:hover{
-    color: $colorLetra3;
-    font-size: 40px;
+    &:hover{
+        color: $colorLetra3;
+        font-size: 40px;
+    }
 }
 
 
@@ -164,17 +139,21 @@ a:hover{
     background-color: $colorFondo1;
 }
 .prepararCafe{
+
+    &_animation{
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    }
     &_1{
     grid-area: texto1;
     font-family: 'Fuzzy Bubbles', cursive;
     color: $colorNavFoo1;
     font-size: 35px;
     margin-top: 25px;
-    animation-name: efecto1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    @extend .prepararCafe_animation;
     }
 
     &_2{
@@ -184,11 +163,7 @@ a:hover{
     font-size: 25px;
     margin-bottom: 10px;
     margin-top: 10px;
-    animation-name: efecto1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    @extend .prepararCafe_animation;
     }
 }
 #videoIndex{
@@ -229,17 +204,19 @@ a:hover{
     width: 400px;
     align-items: center;
 }
+
+@mixin configuracionProducto($display, $fontSize, $justifyContent, $textAlign){
+    display: $display;
+    font-size: $fontSize;
+    justify-content: $justifyContent;
+    text-align: $textAlign;
+}
 #textoProducto{
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    text-align: center;
+    @include configuracionProducto(flex, 30px, center, center)
 }
 
 #precioProducto{
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
+    @include configuracionProducto(flex, 30px, center, center)
 }
 #buttonSize{
     height: 50px;
@@ -408,10 +385,10 @@ a:hover{
         text-decoration: none; 
         color: $colorLetra2;
         transition: 1s;
-    }
-    a:hover{
-        color: $colorLetra3;
-        font-size: 40px;
+        &:hover{
+            color: $colorLetra3;
+            font-size: 40px;
+        }
     }
  
 /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
@@ -432,17 +409,20 @@ a:hover{
         margin-bottom: 40px;
     }
     .prepararCafe{
+    &_animationMobile{
+        animation-name: efecto1;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 5s;
+        animation-delay: 3s;
+        }
     &_1{
         grid-area: texto1;
         font-family: 'Fuzzy Bubbles', cursive;
         color: $colorEfecto8;
         font-size: 15px;
         margin-top: 5px;
-        animation-name: efecto3;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 5s;
-        animation-delay: 3s;
+        @extend .prepararCafe_animationMobile;
         }
 
     &_2{
@@ -454,11 +434,7 @@ a:hover{
         margin-top: 5px;
         margin-left: 20px;
         margin-right: 5px;
-        animation-name: efecto3;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 5s;
-        animation-delay: 3s;
+        @extend .prepararCafe_animationMobile;
     }
 }
     #videoIndex{
@@ -502,17 +478,19 @@ a:hover{
     width: 165px;
     align-items: center;
 }
+
+@mixin configuracionProductoMobile($displayM,$fontSizeM,$justifyContentM,$textAlignM){
+    display: $displayM;
+    font-size: $fontSizeM;
+    justify-content: $justifyContentM;
+    text-align: $textAlignM;
+}
 #textoProducto{
-    display: flex;
-    font-size: 10px;
-    justify-content: center;
-    text-align: center;
+    @include configuracionProductoMobile(flex, 10px, center, center)
 }
 
 #precioProducto{
-    display: flex;
-    font-size: 10px;
-    justify-content: center;
+    @include configuracionProductoMobile(flex, 9px, center, center)
 }
 #buttonSize{
     height: 30px;

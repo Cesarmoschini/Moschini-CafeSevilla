@@ -7,8 +7,8 @@
   font-family: titular;
   src: url(../fonts/fuentecafe.ttf); }
 
-/*VARIABLES DE COLOR DE ACÁ PARA ABAJO*/
-/*VARIABLES DE COLOR DE ACÁ PARA ARRIBA*/
+/*VARIABLES IMPORTADAS DE ACÁ PARA ABAJO*/
+/*VARIABLES IMPORTADAS DE ACÁ PARA ARRIBA*/
 #buttonIndex {
   background-color: brown;
   color: blanchedalmond; }
@@ -22,7 +22,9 @@
     grid-template-rows: 10% 80% 10%;
     justify-content: space-around;
     align-content: space-between;
-    grid-template-areas: "header nav" "main main" "footer footer"; }
+    grid-template-areas: "header nav"
+ "main main"
+ "footer footer"; }
   header {
     grid-area: header;
     position: fixed;
@@ -54,7 +56,8 @@
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 45% 45%;
-    grid-template-areas: "address" "derechos";
+    grid-template-areas: "address"
+ "derechos";
     justify-content: space-around;
     align-content: space-between; }
     footer h6 {
@@ -88,9 +91,9 @@
     text-decoration: none;
     color: blanchedalmond;
     transition: 1s; }
-  a:hover {
-    color: white;
-    font-size: 40px; }
+    #a:hover {
+      color: white;
+      font-size: 40px; }
   /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
   /*MAIN INICIO DE ACÁ PARA ABAJO*/
   #mainIndex {
@@ -98,35 +101,32 @@
     display: grid;
     grid-template-columns: 65% 30%;
     grid-template-rows: 25% 70%;
-    grid-template-areas: "texto1 texto1" "video texto2";
+    grid-template-areas: "texto1 texto1"
+ "video texto2";
     justify-content: space-around;
     align-content: space-between;
     padding-top: 40px;
     margin-bottom: 40px;
     background-color: #fcfcc8; }
-  .prepararCafe_1 {
-    grid-area: texto1;
-    font-family: 'Fuzzy Bubbles', cursive;
-    color: #743b1b;
-    font-size: 35px;
-    margin-top: 25px;
+  .prepararCafe_animation, .prepararCafe_1, .prepararCafe_2 {
     animation-name: efecto1;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-duration: 4s;
     animation-delay: 2s; }
+  .prepararCafe_1 {
+    grid-area: texto1;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: #743b1b;
+    font-size: 35px;
+    margin-top: 25px; }
   .prepararCafe_2 {
     grid-area: texto2;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #743b1b;
     font-size: 25px;
     margin-bottom: 10px;
-    margin-top: 10px;
-    animation-name: efecto1;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 4s;
-    animation-delay: 2s; }
+    margin-top: 10px; }
   #videoIndex {
     grid-area: video;
     width: 100%; }
@@ -168,8 +168,9 @@
     text-align: center; }
   #precioProducto {
     display: flex;
-    font-size: 20px;
-    justify-content: center; }
+    font-size: 30px;
+    justify-content: center;
+    text-align: center; }
   #buttonSize {
     height: 50px;
     width: 120px;
@@ -245,7 +246,9 @@
     grid-template-rows: 10% 78% 10%;
     justify-content: space-around;
     align-content: space-between;
-    grid-template-areas: "header nav" "main main" "footer footer"; }
+    grid-template-areas: "header nav"
+ "main main"
+ "footer footer"; }
   header {
     grid-area: header;
     position: fixed;
@@ -273,7 +276,8 @@
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 45% 45%;
-    grid-template-areas: "address" "derechos";
+    grid-template-areas: "address"
+ "derechos";
     justify-content: space-around;
     align-content: space-between; }
     footer h6 {
@@ -306,9 +310,9 @@
     text-decoration: none;
     color: blanchedalmond;
     transition: 1s; }
-  a:hover {
-    color: white;
-    font-size: 40px; }
+    #a:hover {
+      color: white;
+      font-size: 40px; }
   /*HEADER Y FOOTER DE ACÁ PARA ARRIBAR*/
   /*MAIN INICIO DE ACÁ PARA ABAJO*/
   #mainIndex {
@@ -316,23 +320,26 @@
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 30% 20% 45%;
-    grid-template-areas: "texto1" "texto2" "video";
+    grid-template-areas: "texto1"
+ "texto2"
+ "video";
     justify-content: space-around;
     align-content: space-between;
     justify-items: center;
     background-color: #ffc5d1;
     margin-bottom: 40px; }
+  .prepararCafe_animationMobile, .prepararCafe_1, .prepararCafe_2 {
+    animation-name: efecto1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 3s; }
   .prepararCafe_1 {
     grid-area: texto1;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #c80505;
     font-size: 15px;
-    margin-top: 5px;
-    animation-name: efecto3;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 3s; }
+    margin-top: 5px; }
   .prepararCafe_2 {
     grid-area: texto2;
     font-family: 'Fuzzy Bubbles', cursive;
@@ -341,12 +348,7 @@
     margin-bottom: 10px;
     margin-top: 5px;
     margin-left: 20px;
-    margin-right: 5px;
-    animation-name: efecto3;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 3s; }
+    margin-right: 5px; }
   #videoIndex {
     grid-area: video;
     width: 95%;
@@ -392,8 +394,9 @@
     text-align: center; }
   #precioProducto {
     display: flex;
-    font-size: 10px;
-    justify-content: center; }
+    font-size: 9px;
+    justify-content: center;
+    text-align: center; }
   #buttonSize {
     height: 30px;
     width: 90px;
@@ -425,7 +428,8 @@
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "ima1"  "tex1";
+    grid-template-areas: "ima1" 
+ "tex1";
     justify-content: space-around;
     align-content: space-between;
     background-color: darkkhaki; }
