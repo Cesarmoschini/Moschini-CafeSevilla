@@ -22,9 +22,7 @@
     grid-template-rows: 10% 80% 10%;
     justify-content: space-around;
     align-content: space-between;
-    grid-template-areas: "header nav"
- "main main"
- "footer footer"; }
+    grid-template-areas: "header nav" "main main" "footer footer"; }
   header {
     grid-area: header;
     position: fixed;
@@ -56,8 +54,7 @@
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 45% 45%;
-    grid-template-areas: "address"
- "derechos";
+    grid-template-areas: "address" "derechos";
     justify-content: space-around;
     align-content: space-between; }
     footer h6 {
@@ -99,10 +96,9 @@
   #mainIndex {
     grid-area: main;
     display: grid;
-    grid-template-columns: 65% 30%;
-    grid-template-rows: 25% 70%;
-    grid-template-areas: "texto1 texto1"
- "video texto2";
+    grid-template-columns: 40% 5% 50%;
+    grid-template-rows: 55% 35%;
+    grid-template-areas: "texto1 video video" "texto1 texto2 texto2";
     justify-content: space-around;
     align-content: space-between;
     padding-top: 40px;
@@ -118,13 +114,13 @@
     grid-area: texto1;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #743b1b;
-    font-size: 35px;
+    font-size: 40px;
     margin-top: 25px; }
   .prepararCafe_2 {
     grid-area: texto2;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #743b1b;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
     margin-top: 10px; }
   #videoIndex {
@@ -246,9 +242,7 @@
     grid-template-rows: 10% 78% 10%;
     justify-content: space-around;
     align-content: space-between;
-    grid-template-areas: "header nav"
- "main main"
- "footer footer"; }
+    grid-template-areas: "header nav" "main main" "footer footer"; }
   header {
     grid-area: header;
     position: fixed;
@@ -276,8 +270,7 @@
     width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 45% 45%;
-    grid-template-areas: "address"
- "derechos";
+    grid-template-areas: "address" "derechos";
     justify-content: space-around;
     align-content: space-between; }
     footer h6 {
@@ -320,9 +313,7 @@
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 30% 20% 45%;
-    grid-template-areas: "texto1"
- "texto2"
- "video";
+    grid-template-areas: "texto1" "texto2" "video";
     justify-content: space-around;
     align-content: space-between;
     justify-items: center;
@@ -428,8 +419,7 @@
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 50% 50%;
-    grid-template-areas: "ima1" 
- "tex1";
+    grid-template-areas: "ima1"  "tex1";
     justify-content: space-around;
     align-content: space-between;
     background-color: darkkhaki; }
