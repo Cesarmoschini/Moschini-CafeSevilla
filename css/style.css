@@ -64,7 +64,7 @@
       vertical-align: middle; }
   /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
   /*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
-  h4 {
+  h1 {
     display: inline;
     color: whitesmoke;
     font-family: titular;
@@ -280,7 +280,7 @@
       vertical-align: middle; }
   /*CONFIGURACIÓN DE ESTRUCTURA PRIMARIA DE ACÁ PARA ARRIBA*/
   /*HEADER Y FOOTER DE ACÁ PARA ABAJO*/
-  h4 {
+  h1 {
     display: inline-block;
     color: whitesmoke;
     font-family: titular;
