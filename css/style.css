@@ -96,9 +96,9 @@
   #mainIndex {
     grid-area: main;
     display: grid;
-    grid-template-columns: 40% 5% 50%;
-    grid-template-rows: 55% 35%;
-    grid-template-areas: "texto1 video video" "texto1 texto2 texto2";
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 60% 35%;
+    grid-template-areas: "video video" "texto1 texto2";
     justify-content: space-around;
     align-content: space-between;
     padding-top: 40px;
@@ -114,18 +114,20 @@
     grid-area: texto1;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #743b1b;
-    font-size: 40px;
-    margin-top: 25px; }
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px; }
   .prepararCafe_2 {
     grid-area: texto2;
     font-family: 'Fuzzy Bubbles', cursive;
     color: #743b1b;
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px; }
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 40px; }
   #videoIndex {
     grid-area: video;
-    width: 100%; }
+    width: 70%;
+    margin-left: 200px; }
   @keyframes efecto1 {
     0% {
       color: #803912; }
